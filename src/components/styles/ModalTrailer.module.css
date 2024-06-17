@@ -1,0 +1,39 @@
+.trailerPlayer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 999;
+}
+
+.trailerPlayer aside {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	height: 70%;
+	background-color: var(--accent-color);
+	border: 2px solid var(--primary-color);
+	border-radius: 10px;
+}
+
+.trailerPlayer iframe {
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	border: none;
+	background-color: var(--accent-color);
+	border: 2px solid var(--accent-color);
+}
+
+@media screen and (max-width: 435px) {
+	.trailerPlayer aside {
+		width: 70%;
+		height: 50%;
+	}
+}

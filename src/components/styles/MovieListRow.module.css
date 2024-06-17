@@ -1,0 +1,46 @@
+.movieListContainer {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 85%;
+	height: 30rem;
+	margin: 2rem auto;
+}
+
+.movieTitle {
+	color: var(--secondary-color);
+	margin-bottom: 10px;
+	text-decoration: underline;
+	text-decoration-color: var(--accent-color);
+	text-decoration-thickness: 3px;
+}
+
+.movieList {
+	display: flex;
+	gap: 0.5rem;
+	width: 100%;
+	height: 100%;
+	list-style: none;
+	overflow-x: auto;
+	scrollbar-color: var(--accent-color) transparent;
+	scrollbar-width: thin;
+	color: var(--secondary-color);
+}
+
+@media screen and (max-width: 578px) {
+	.movieListContainer {
+		height: 26rem;
+	}
+}
+
+@media screen and (max-width: 514px) {
+	.movieListContainer {
+		height: 23rem;
+	}
+}
+
+@media screen and (max-width: 378px) {
+	.movieListContainer {
+		height: 20rem;
+	}
+}

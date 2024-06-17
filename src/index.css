@@ -1,0 +1,58 @@
+@import "~react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	--primary-color: #fcfcfc;
+	--accent-color: #e30914;
+	--secondary-color: #222;
+	height: 100dvh;
+	width: 100dvw;
+	font-family: 'Space Grotesk', sans-serif;
+	overflow-x: hidden;
+	background-color: var(--primary-color);
+}
+
+body.dark {
+	--primary-color: #222;
+	--accent-color: #e30914;
+	--secondary-color: #fcfcfc;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--secondary-color);
+	border-radius: 6px;
+}
+
+.pages {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: 4rem;
+	margin-left: 3rem;
+	max-width: 2500px;
+}
+
+@media screen and (min-width: 2500px) {
+	.pages {
+		margin: 4rem auto;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	.pages {
+		margin-left: 2rem;
+	}
+}

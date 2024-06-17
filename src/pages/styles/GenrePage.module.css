@@ -1,0 +1,99 @@
+.genreList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	width: 95%;
+}
+
+.genreTitle {
+	align-self: flex-start;
+	font-size: 1.5rem;
+	color: var(--secondary-color);
+	text-decoration: underline;
+	text-decoration-color: var(--accent-color);
+	text-decoration-thickness: 3px;
+}
+
+.genre {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	width: 100%;
+	gap: 1rem;
+	margin-block: 1rem;
+	list-style: none;
+}
+
+.loadMoreBtn {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	margin: 0 auto;
+	padding: 0.5rem 1.2rem;
+	margin-bottom: 1rem;
+	border: 2px solid var(--accent-color);
+	border-radius: 5px;
+	font-size: 1rem;
+	background-color: transparent;
+	transition: 0.4s ease;
+	color: var(--secondary-color);
+}
+
+.loadMoreBtn:hover {
+	color: var(--primary-color);
+}
+
+.loadMoreBtn::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	width: 0%;
+	height: 100%;
+	background-color: var(--accent-color);
+	transition: 0.3s ease-in-out;
+}
+
+.loadMoreBtn:hover::before {
+	width: 100%;
+}
+
+.genreList h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--accent-color);
+}
+
+@media screen and (max-width: 578px) {
+	.genre {
+		grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+	}
+}
+
+@media screen and (max-width: 435px) {
+	.genreTitle {
+		font-size: 1.5rem;
+	}
+	
+	.genreList h2 {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 409px) {
+	.genre {
+		grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+	}
+
+	.genreTitle {
+		font-size: 1.5rem;
+	}
+
+	.genreList h2 {
+		font-size: 1.2rem;
+	}
+}

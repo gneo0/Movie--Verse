@@ -1,0 +1,10 @@
+.genres {
+	color: var(--secondary-color);
+	margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 435px) {
+	.genres {
+		font-size: 0.9rem;
+	}
+}

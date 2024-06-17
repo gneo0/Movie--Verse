@@ -1,0 +1,58 @@
+.movieDetails {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+	bottom: 7rem;
+	left: 2rem;
+	width: 40%;
+}
+
+.movieDetails h1 {
+	font-size: 2rem;
+}
+
+.movieDetailsButtons {
+	display: flex;
+	width: 100%;
+	margin-top: 2rem;
+	gap: 1.5rem;
+}
+
+@media screen and (max-width: 857px) {
+	.movieDetails {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 625px) {
+	.movieDetails {
+		width: 80%;
+	}
+
+	.movieDetailsButtons button {
+		font-size: 0.7rem;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	.movieDetails {
+		bottom: 7rem;
+	}
+
+	.movieDetails h1 {
+		font-size: 1.5rem;
+	}
+
+	.movieDetails p {
+		font-size: 0.9rem;
+	}
+
+	.movieDetailsButtons {
+		gap: 0.5rem;
+	}
+
+	.movieDetailsButtons button {
+		padding: 0.5rem 1.1rem;
+	}
+}

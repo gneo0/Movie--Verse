@@ -1,0 +1,24 @@
+.logoContainer {
+	display: flex;
+	user-select: none;
+	cursor: pointer;
+	margin-left: 1.3rem;
+	font-size: 1.3rem;
+	text-decoration: none;
+}
+
+.logoContainer p {
+	color: var(--secondary-color);
+}
+
+.logoContainer span {
+	color: var(--accent-color);
+	font-style: italic;
+}
+
+@media screen and (max-width: 475px) {
+	.logoContainer {
+		font-size: 1.2rem;
+		margin-left: 0.2rem;
+	}
+}

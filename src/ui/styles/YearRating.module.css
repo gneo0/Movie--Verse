@@ -1,0 +1,19 @@
+.yearRating {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	margin-top: 5px;
+	gap: 1rem;
+	width: 100%;
+}
+
+.yearRating div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ratingStar {
+	color: #f5c518;
+}

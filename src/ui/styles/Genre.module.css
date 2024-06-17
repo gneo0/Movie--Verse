@@ -1,0 +1,11 @@
+.genre {
+	cursor: pointer;
+	padding: 0.2rem;
+	list-style: none;
+}
+
+.genre:hover {
+	color: #fcfcfc;
+	background-color: var(--accent-color);
+	font-weight: 600;
+}

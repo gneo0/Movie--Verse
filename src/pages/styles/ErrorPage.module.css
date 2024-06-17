@@ -1,0 +1,53 @@
+.errorPage {
+	display: grid;
+	place-items: center;
+	text-align: center;
+	width: 100dvw;
+	height: 100dvh;
+	background-color: #e30914;
+}
+
+.errorText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	gap: 2rem;
+	padding: 3rem 1rem;
+	border-radius: 8px;
+	background-color: #fcfcfc;
+}
+
+.errorText h1 {
+	font-size: 3rem;
+	color: #e30914;
+}
+
+.errorText p {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.errorMsg {
+	font-style: italic;
+	margin-top: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .errorText {
+    width: 80%;
+  }
+
+  .errorText h1 {
+    font-size: 2rem;
+  }
+
+  .errorText p {
+    font-size: 1rem;
+  }
+
+  .errorText button {
+    font-size: 0.7rem;
+  }
+}

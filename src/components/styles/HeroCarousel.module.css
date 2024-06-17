@@ -1,0 +1,36 @@
+.heroContainer {
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+	height: 40rem;
+	border-radius: 5px;
+	background-color: var(--accent-color);
+	overflow: hidden;
+	box-shadow: -2px -2px 1px var(--accent-color),
+		2px 1px 9px var(--secondary-color);
+}
+
+.heroContainer .span {
+	position: absolute;
+	top: 0rem;
+	left: -9px;
+	z-index: 99;
+	padding-block: 0.5rem;
+	padding-inline: 2rem 1.2rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 1px solid var(--accent-color);
+	border-top: none;
+	border-bottom-right-radius: 5px;
+	user-select: none;
+	color: #fcfcfc;
+}
+
+@media screen and (max-width: 435px) {
+	.heroContainer {
+		height: 38rem;
+	}
+
+	.span {
+		font-size: 0.8rem;
+	}
+}
