@@ -8,4 +8,4 @@ Project was created with:
 * CSS Modules
 * Vite
 
-Watch here live [demo](https://movie-verse-241903.netlify.app/)
+Watch here live [demo](https://movie-verse-031924.netlify.app/)
